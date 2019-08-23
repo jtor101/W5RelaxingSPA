@@ -1,0 +1,26 @@
+body {
+  background-color: darkgray;
+}
+
+#contentContainer {
+  background-color: white;
+}
+
+#contentContainer,
+#servSection,
+#categorySelector,
+.card,
+.cardbody {
+  border: 2px ridge black;
+  border-radius: 8px;
+}
+
+#categSection {
+  color: black;
+  text-align: center;
+}
+
+#categorySelector,
+#servSection a {
+  text-decoration: none;
+}

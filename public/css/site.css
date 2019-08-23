@@ -1,26 +1,78 @@
 body {
-  background-color: darkgray;
+  background-color: darkgoldenrod;
 }
 
-#contentContainer {
+#bannerbg {
+  background-image: url("/images/headerbg.jpg");
+}
+
+nav {
+  background-color: blanchedalmond;
+}
+
+nav li:hover {
   background-color: white;
 }
 
-#contentContainer,
-#servSection,
-#categorySelector,
-.card,
-.cardbody {
-  border: 2px ridge black;
-  border-radius: 8px;
+/* Positions h1 in bottom-left */
+h1 {
+  position: relative;
+  top: 35px;
+}
+
+/* Sets bullet style for home page category */
+#homecatlist {
+  list-style-type: circle;
+}
+
+/* Reduces font size of button */
+#secondButton {
+  font-size: 70%;
+}
+
+#contentContainer {
+  background-color: burlywood;
+  position: relative;
+  bottom: 15px;
 }
 
 #categSection {
+  background-color: burlywood;
   color: black;
   text-align: center;
 }
 
+#categorySelector {
+  background-color: blanchedalmond;
+}
+
+#servSection {
+  background-color: white;
+}
+
+/* Ridged borders and rounded corners for cards, Service options display, and dropdown menu */
+#servSection,
 #categorySelector,
-#servSection a {
-  text-decoration: none;
+.card {
+  border: 2px ridge black;
+  border-radius: 8px;
+}
+
+/* Moves section displaying Service options up */
+#servSection {
+  position: relative;
+  bottom: 15px;
+  box-shadow: 5px 5px;
+}
+
+/* Box Shadow for cards and home page */
+.card,
+#homeSection {
+  box-shadow: 5px 5px;
+}
+
+/* Link underlines on hover */
+#homeButton:hover,
+#firstButton:hover {
+  text-decoration: underline;
 }

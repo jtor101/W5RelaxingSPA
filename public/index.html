@@ -18,60 +18,99 @@
     <link rel="stylesheet" href="css/site.css" type="text/css" />
     <link rel="icon" href="images/favicon.png" />
 
-    <title>Single Page App</title>
+    <title>Springs Of Relaxation Spa S.P.A.</title>
   </head>
 
   <body class="container-fluid">
     <!-- Header -->
-    <header>
-      <h1 class="text-center py-5 bg-primary">
-        Products SPA
+    <header class="py-5" id="bannerbg">
+      <h1 class="text-white pl-3">
+        Springs Of Relaxation
       </h1>
     </header>
+
+    <!-- Nav -->
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-reset" id="homeButton" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-reset" id="firstButton" href="#"
+            >View Our Services</a
+          >
+        </li>
+      </ul>
+    </nav>
 
     <div class="row">
       <div class="col-8 offset-2">
         <main id="contentContainer" class="mt-5">
           <!-- Body -->
 
-          <button class="btn btn-primary my-4 col-4 offset-4" id="firstButton">
-            Click to view categories
-          </button>
+          <!-- Home Section, hides on click of View Our Services -->
+          <section id="homeSection" class="p-2 text-center">
+            Welcome to the Springs of Relaxation!
+            <img
+              src="images/homesecimg.jpg"
+              alt="Home Section sun image"
+              class="img-fluid py-2"
+            /><br />
+            We offer a wide variety of services, including:<br />
+            <ul class="col-4 offset-4 pt-2" id="homecatlist">
+              <li class="pb-2">Acupuncture</li>
+              <li class="pb-2">Body Treatments</li>
+              <li class="pb-2">Hair Salon</li>
+              <li class="pb-2">Massage and Bodywork</li>
+              <li class="pb-2">Nail Salon</li>
+              <li>Skin Care</li>
+            </ul>
+          </section>
 
+          <!-- Section hides on click of Home -->
+          <!-- Dynamic behavior of dropdown generates validation error in dynamic HTML r/t x-placement -->
           <section id="categSection">
             <div class="dropdown">
+              <!-- Select Category button -->
               <button
-                class="btn btn-danger dropdown-toggle mt-5 mb-3 ml-5 px-5"
+                class="btn btn-danger dropdown-toggle my-3 col-4"
                 type="button"
                 id="secondButton"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Select a category
+                Select category
               </button>
 
+              <!-- Category Menu -->
               <div
-                class="dropdown-menu text-center"
+                class="dropdown-menu text-center mb-2 pb-2"
                 id="categorySelector"
-                aria-labelledby="dropdownMenuButton"
               ></div>
             </div>
           </section>
 
-          <section id="servSection" class="text-center m-5 p-3"></section>
+          <!-- List of Services populate here-->
+          <section id="servSection"></section>
 
+          <!-- Service info populate into card -->
           <section id="servInfo" class="text-center m-5 p-3">
             <div class="card">
-              <h5 class="card-header bg-dark text-white"></h5>
+              <!-- Service Name -->
+              <h5 class="card-header bg-danger text-white"></h5>
               <div class="card-body">
+                <!-- Service Description -->
                 <h5 class="card-title"></h5>
+                <!-- Service Price -->
                 <p class="card-price"></p>
-                <p class="card-stock"></p>
+                <!-- Service Minutes-->
+                <p class="card-time"></p>
               </div>
             </div>
           </section>
         </main>
+        <footer class="py-2">John Torres - HartCode 2019</footer>
       </div>
     </div>
 

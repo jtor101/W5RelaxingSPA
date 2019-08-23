@@ -24,6 +24,7 @@ $(function() {
       $("#catid" + i).on("click", function() {
         getServices(categories[i].Value);
         $("#servSection").show();
+        $("#servInfo").hide();
       });
     }
   });
@@ -37,14 +38,14 @@ $(function() {
       $("#servSection").empty();
       let slength = services.length;
 
-      $("#servSection").append("<h2>Services We Offer</h2><ul>");
+      $("#servSection").append("<h2>Services We Offer</h2>");
       // Begin loop to load 2nd dropdown.
       for (let i = 0; i < slength; i++) {
-        $("#servSection").append("<li><a id=servid" + i + ">");
+        $("#servSection").append("<ul><li><a id=servid" + i + ">");
         $("#servid" + i).text(services[i].ServiceName);
         $("#servid" + i).attr("href", "#");
         $("#servid" + i).prop("class", "text-reset");
-        $("#servSection").append("</a></li><br>");
+        $("#servSection").append("</a></li></ul><br>");
         $("#servSection").prop("class", "p-3 m-5");
         // Wire click handler for each service option.
         $("#servid" + i).on("click", function() {
@@ -52,7 +53,6 @@ $(function() {
           $("#servInfo").show();
         });
       }
-      $("#servSection").append("</ul>");
     });
     // End getJSON for **.
   }

@@ -50,7 +50,7 @@
 
           <!-- Home Section, hides on click of View Our Services -->
           <section id="homeSection" class="p-2 text-center">
-            Welcome to the Springs of Relaxation!
+            <h2>Welcome to the Springs of Relaxation!</h2>
             <img
               src="images/homesecimg.jpg"
               alt="Home Section sun image"
@@ -69,7 +69,7 @@
 
           <!-- Section hides on click of Home -->
           <!-- Dynamic behavior of dropdown generates validation error in dynamic HTML r/t x-placement -->
-          <section id="categSection">
+          <div id="categSection">
             <div class="dropdown">
               <!-- Select Category button -->
               <button
@@ -89,19 +89,19 @@
                 id="categorySelector"
               ></div>
             </div>
-          </section>
+          </div>
 
           <!-- List of Services populate here-->
-          <section id="servSection"></section>
+          <div id="servSection"></div>
 
           <!-- Service info populate into card -->
           <section id="servInfo" class="text-center m-5 p-3">
             <div class="card">
               <!-- Service Name -->
-              <h5 class="card-header bg-danger text-white"></h5>
+              <h5 class="card-header bg-danger text-white">#</h5>
               <div class="card-body">
                 <!-- Service Description -->
-                <h5 class="card-title"></h5>
+                <h5 class="card-title">#</h5>
                 <!-- Service Price -->
                 <p class="card-price"></p>
                 <!-- Service Minutes-->
@@ -110,10 +110,9 @@
             </div>
           </section>
         </main>
-        <footer class="py-2">John Torres - HartCode 2019</footer>
       </div>
     </div>
-
+    <footer class="text-center py-2">John Torres - HartCode 2019</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

@@ -32,7 +32,7 @@ $(function() {
 
   // Begin getServices function
   function getServices(cat) {
-    // Begin getJSON for **.
+    // Begin getJSON for services.
     $.getJSON("api/services/bycategory/" + cat, function(data) {
       let services = data;
       $("#servSection").empty();
@@ -54,13 +54,13 @@ $(function() {
         });
       }
     });
-    // End getJSON for **.
+    // End getJSON for services.
   }
   // End getServices function
 
   // Begin getServiceInfo function
   function getServiceInfo(id) {
-    // Begin getJSON for **.
+    // Begin getJSON for service info.
     $.getJSON("api/services/" + id, function(data) {
       let servInfo = data;
       // Clears previous card info.

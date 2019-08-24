@@ -1,21 +1,43 @@
+/* Background settings */
 body {
   background-color: darkgoldenrod;
 }
 
 #bannerbg {
   background-image: url("/images/headerbg.jpg");
+  background-size: cover;
 }
 
 nav {
-  background-color: blanchedalmond;
+  background-color: khaki;
 }
 
 nav li:hover {
   background-color: white;
 }
 
+#contentContainer {
+  background-color: darkorange;
+  position: relative;
+  bottom: 15px;
+}
+
+#categSection {
+  background-color: darkorange;
+  color: black;
+  text-align: center;
+}
+
+#categorySelector {
+  background-color: khaki;
+}
+
+#servSection {
+  background-color: white;
+}
+
 footer {
-  background-color: blanchedalmond;
+  background-color: khaki;
 }
 
 /* Positions h1 in bottom-left */
@@ -32,26 +54,6 @@ h1 {
 /* Reduces font size of button */
 #secondButton {
   font-size: 70%;
-}
-
-#contentContainer {
-  background-color: burlywood;
-  position: relative;
-  bottom: 15px;
-}
-
-#categSection {
-  background-color: burlywood;
-  color: black;
-  text-align: center;
-}
-
-#categorySelector {
-  background-color: blanchedalmond;
-}
-
-#servSection {
-  background-color: white;
 }
 
 /* Ridged borders and rounded corners for cards, Service options display, and dropdown menu */

@@ -11,5 +11,5 @@ With the theme being a spa, my primary focus was trying to be more ambitious wit
 
 Screenshots:
 ![Image of Home Page](/public/images/screenshot1home.png)
-![Image of Services](https://jtor101.github.com/images/screenshot2services.png)
-![Image of Service Info](https://jtor101.github.com/images/screenshot3serviceinfo.png)
+![Image of Services](/public/images/screenshot2services.png)
+![Image of Service Info](/public/images/screenshot3serviceinfo.png)

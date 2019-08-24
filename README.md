@@ -10,6 +10,9 @@ Goals:
 With the theme being a spa, my primary focus was trying to be more ambitious with color setting after functionality was ensured. Spa's seem to inspire a cool color theme, a lot of purples, greens, and blues. So I wanted to try a warmer color scheme of reds, oranges, and darker yellows. The results bring about visions of a sunset/night spa in my opinion. This was a sub-goal within the primary color setting goal, I wanted the theme to give visions of an ambience for a spa that doesn't actually exist.
 
 Screenshots:
+Image Of Home Page:
 ![Image of Home Page](/public/images/screenshot1home.png)
+Image Of Services:
 ![Image of Services](/public/images/screenshot2services.png)
+Image Of Service Info:
 ![Image of Service Info](/public/images/screenshot3serviceinfo.png)
